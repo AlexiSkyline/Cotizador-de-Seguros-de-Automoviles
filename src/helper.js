@@ -32,5 +32,5 @@ export function obtenerPlan( plan ) {
 
 // Todo Muestra la primera letra en mayuscula
 export function primeraMayuscula( texto ) {
-    return texto.charAt( 0 ).toUppercase() + texto.slice( 1 );
+    return texto.charAt( 0 ).toUpperCase() + texto.slice( 1 );
 }

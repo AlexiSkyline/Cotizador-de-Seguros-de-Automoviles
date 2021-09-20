@@ -22,7 +22,7 @@ export const Resumen = ({ datos }) => {
             <ul>
                 <li>Marca: ${ primeraMayuscula( marca ) } </li>
                 <li>Plan: ${ primeraMayuscula( plan ) } </li>
-                <li>Año del Auto: ${ primeraMayuscula( year ) } </li>
+                <li>Año del Auto: ${ year } </li>
             </ul>
         </ContenedorResumen>
     )
