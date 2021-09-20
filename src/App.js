@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Formulario } from "./components/Formulario";
 import { Header } from "./components/Header";
 
 const Contenedor = styled.div`
@@ -18,7 +19,7 @@ function App() {
       />
 
       <ContenedorFormulario>
-        
+        <Formulario />
       </ContenedorFormulario>
     </Contenedor>
   );
