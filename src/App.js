@@ -6,12 +6,20 @@ const Contenedor = styled.div`
     margin: 0 auto;
 `;
 
+const ContenedorFormulario = styled.div`
+    background-color: #FFF;
+    padding: 3rem;
+`;
 function App() {
   return (
     <Contenedor>
       <Header 
         titulo='Cotizador de Seguros'
       />
+
+      <ContenedorFormulario>
+        
+      </ContenedorFormulario>
     </Contenedor>
   );
 }
