@@ -4,6 +4,7 @@ import { Formulario } from "./components/Formulario";
 import { Header } from "./components/Header";
 import { Resultado } from "./components/Resultado";
 import { Resumen } from "./components/Resumen";
+import { Spinner } from "./components/Spinner";
 
 const Contenedor = styled.div`
     max-width: 600px;
@@ -25,6 +26,8 @@ function App() {
       }
   });
 
+  const [ cargando, setCargando ] = useState(false);
+
   const { cotizacion, datos } = resumen;
   return (
     <Contenedor>
@@ -35,15 +38,17 @@ function App() {
       <ContenedorFormulario>
         <Formulario 
           setResumen={ setResumen }
+          setCargando={ setCargando }
         />
 
+        { cargando ? <Spinner /> : null } 
+    
         <Resumen 
           datos={ datos }
         />
+        
+        { !cargando ? <Resultado cotizacion={ cotizacion } /> : null }
 
-        <Resultado 
-          cotizacion={ cotizacion }
-        />
       </ContenedorFormulario>
     </Contenedor>
   );
