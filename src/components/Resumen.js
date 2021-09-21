@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 import { primeraMayuscula } from '../helper';
 
 const ContenedorResumen = styled.div`
@@ -9,6 +10,7 @@ const ContenedorResumen = styled.div`
     color: #FFF;
     margin: 1rem;
 `;
+
 export const Resumen = ({ datos }) => {
     
     // TODO extrae datos
@@ -27,3 +29,7 @@ export const Resumen = ({ datos }) => {
         </ContenedorResumen>
     )
 }
+
+Resumen.propTypes = {
+    datos: PropTypes.object.isRequired
+} 
