@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2e656e37-6405-41ae-83cf-f3811152b6ae/deploy-status)](https://app.netlify.com/sites/cotizador-carros-byalexis/deploys)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
